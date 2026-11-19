@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript demo page showing interactive programming skills">
+    <meta name="author" content="Armstrong Vassimu">
+    <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+
+    <title>JavaScript Demo</title>
+    <link rel="stylesheet" href="basestyle.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body class="demos">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="container">
+        <header>
+            <h1>Armstrong</h1>
+            <p>Computer Science Student</p>
+        </header>
+
+    <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cssdemo.html">CSS Demo</a>
+            <a href="jsdemo.html">JS Demo</a>
+        </nav>
+
+        <main id="main-content" class="demos-content">
+            <section class="demos-intro">
+
+                <h2>JavaScript Skills Demonstration</h2>
+
+                <p>This page demonstrates my JavaScript abilities including DOM manipulation, event handling, APIs, and dynamic content.</p>
+            </section>
+
+            <section class="demo-card-page">
+                <h3>Developer Experience Calculator</h3>
+
+                <label>Years of Coding:</label>
+                <input type="number" id="years">
+
+                <label>Projects Completed:</label>
+                <input type="number" id="projects">
+
+                <button id="calcBtn">Calculate Skill Level</button>
+
+                <p id="skillResult"></p>
+            </section>
+
+            <section class="demo-card-page">
+
+                <h3>Random Project Idea Generator</h3>
+
+                <button id="ideaBtn">Generate Idea</button>
+
+                <p id="ideaOutput"></p>
+            </section>
+
+            <section class="demo-card-page">
+                <h3>Interactive SVG</h3>
+
+                <svg width="200" height="200">
+                    <circle id="skillCircle" cx="100" cy="100" r="40" fill="blue"></circle>
+                </svg>
+
+                <button id="circleBtn">Grow Skill</button>
+            </section>
+
+            <section class="demo-card-page">
+                <h3>Move Portfolio Element</h3>
+
+                <div id="box"></div>
+                <button id="moveBtn">Move Box</button>
+            </section>
+
+            <section class="demo-card-page">
+                <h3>My Skills (Internal JSON)</h3>
+
+                <ul id="skillsList"></ul>
+            </section>
+            
+            <section class="demo-card-page">
+                <h3>Programming Joke (External API)</h3>
+
+                <button id="jokeBtn">Load Joke</button>
+                <p id="jokeText"></p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Armstrong Vassimu, student id: 25017788, This website is for Software development assignment at the university of Staffordshire
+            </p>
+        </footer>
+    </div>
+
+<script src="jsdemo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+    "name": "Armstrong Vassimu CV Website",
+    "short_name": "Armstrong CV",
+    "description": "A CV website presenting Armstrong's qualifications",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "id": "index.html",
+
+    "theme_color": "#1b7f8a",
+    "background_color": "#f8f9fa",
+
+
+    "icons": [
+        {
+            "src": "icons/web-app-manifest-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/web-app-manifest-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },      
+        {
+            "src": "icons/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+
+    "screenshots": [
+        {
+            "src": "icons/screenshot1.png",
+            "type": "image/png",
+            "sizes": "390x844",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "icons/screenshot2.png",
+            "type": "image/png",
+            "sizes": "1280x720",
+            "form_factor": "wide"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page of the CV">
+    <meta name="author" content="Armstrong Vassimu">
+    <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+    <title>CV home page</title>
+
+    <link rel="stylesheet" href="basestyle.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body class="home">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <div class="container">
+        <header>
+            <h1>Armstrong</h1>
+            <p>Computer science student</p>
+            <button id="theme-toggle" type="button">Toggle dark mode</button>
+        </header>
+
+        <main id="main-content">
+            
+            <button id="installBtn" type="button">Install App</button>
+
+            <div class="home-top">
+                <section class="contact-panel" aria-labelledby="contact-heading">
+                    <h2 id="contact-heading">Contact information</h2>
+
+                    <p><strong>Phone Number:</strong>07435112316</p>
+
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:Armsvas@gmail.com">Armsvas@gmail.com</a>
+                    </p>
+            
+                    <p><strong>Location:</strong>London, UK</p>
+                </section>
+
+                <section class="photo-panel" aria-label="profile-photo">
+                    <img src="images/profile-photo.jpg" alt="Profile photo of Armstrong">
+                </section>
+            </div> 
+            
+            <div class="home-mid">
+                <section aria-labelledby="about-heading">
+                    <h2 id="about-heading">About me</h2>
+
+                    <p>
+                        I am a computer science student, interested in becoming a software developer. I have a burning passion of learning and growing, and I wish to develop my skill further.
+                    </p>
+                </section>
+
+                <section aria-labelledby="bio-heading">
+                    <h2 id="bio-heading">Bio</h2>
+                    <ul>
+                        <li><strong>Course:</strong>Computer science</li>
+                        <li><strong>University:</strong>University of Staffordshire</li>
+                        <li><strong>Location:</strong> London, UK</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="home-links" aria-labelledby="explore-heading">
+                <h2 id="explore-heading">Explore My CV</h2>
+
+                <div class="link-boxes">
+                    <a class="link-box" href="qualifications.html">Qualifications</a>
+                    <a class="link-box" href="interest.html">Interests</a>
+                    <a class="link-box" href="demos.html">Demos</a>
+                    <a class="link-box" href="index.html">Home</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Armstrong Vassimu, student id: 25017788, This website is for Software development assignment at the university of Staffordshire
+            </p>
+        </footer>
+    </div>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js")
+                    .then(() => console.log("Service Worker Registered"))
+                    .catch(err => console.log("Service worker failed",err));
+            });
+        }
+    </script>
+
+    <script src="install.js"></script>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
